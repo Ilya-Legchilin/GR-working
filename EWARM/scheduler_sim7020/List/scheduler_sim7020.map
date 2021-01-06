@@ -1,0 +1,898 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.1.245/W32 for ARM                  06/Jan/2021  19:59:35
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Exe\scheduler_sim7020.out
+#    Map file     =
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\List\scheduler_sim7020.map
+#    Command line =
+#        -f C:\Users\il\AppData\Local\Temp\EWF229.tmp
+#        (C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\adc.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\clock.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\json.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\main.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\md5.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\misc.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\protocol.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\schedule.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\sim7020.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\sim7020_phy.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\sim7020_tcp.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\startup_stm32l010xb.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_adc.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_adc_ex.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_cortex.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_dma.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_flash.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_flash_ex.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_flash_ramfunc.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_gpio.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_i2c.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_i2c_ex.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_lptim.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_msp.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_pwr.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_pwr_ex.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_rcc.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_rcc_ex.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_rtc.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_rtc_ex.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_tim.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_tim_ex.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_uart.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_hal_uart_ex.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\stm32l0xx_it.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\system_stm32l0xx.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\tic33.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\uart_simple_protocol.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\wt0.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\wt01.o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj\wtimer.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
+#        --no_out_extension -o
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Exe\scheduler_sim7020.out
+#        --map
+#        C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\List\scheduler_sim7020.map
+#        --config
+#        C:\work\sim_scheduler\sim_scheduler\EWARM/stm32l010xb_flash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = DLMalloc
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The advanced heap was selected because the application calls memory
+allocation functions outside of system library functions, and there
+are calls to deallocation functions in the application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x801'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 1'280, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'4fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0xc0
+  .intvec            ro code   0x800'0000    0xc0  startup_stm32l010xb.o [1]
+                             - 0x800'00c0    0xc0
+
+"P1":                                      0x82c0
+  .text              ro code   0x800'00c0  0x165c  dlmalloc.o [2]
+  .text              ro code   0x800'171c     0xa  abort.o [2]
+  .rodata            const     0x800'1726     0x2  sim7020.o [1]
+  .text              ro code   0x800'1728    0x2c  xgetmemchunk.o [2]
+  .text              ro code   0x800'1754    0x34  ABImemcpy.o [4]
+  .text              ro code   0x800'1788    0x14  exit.o [5]
+  .text              ro code   0x800'179c   0xc94  sim7020.o [1]
+  .text              ro code   0x800'2430   0x5e8  misc.o [1]
+  .text              ro code   0x800'2a18    0x90  sim7020_tcp.o [1]
+  .text              ro code   0x800'2aa8    0xb0  uart_simple_protocol.o [1]
+  .text              ro code   0x800'2b58   0x2e4  sim7020_phy.o [1]
+  .text              ro code   0x800'2e3c   0x36c  protocol.o [1]
+  .text              ro code   0x800'31a8   0x25c  wtimer.o [1]
+  .text              ro code   0x800'3404    0x28  FltCmpGe.o [3]
+  .text              ro code   0x800'342c    0x26  FltCmpLe.o [3]
+  .text              ro code   0x800'3452    0xaa  FltDiv.o [3]
+  .text              ro code   0x800'34fc    0x3a  FltToS32.o [3]
+  .text              ro code   0x800'3536     0x2  startup_stm32l010xb.o [1]
+  .text              ro code   0x800'3538    0x36  IxxToFlt.o [3]
+  .text              ro code   0x800'356e    0xb0  FltMul.o [3]
+  .text              ro code   0x800'361e   0x120  FltAddSub.o [3]
+  .text              ro code   0x800'373e    0xe0  I32DivModFast.o [4]
+  .text              ro code   0x800'381e     0x2  startup_stm32l010xb.o [1]
+  .text              ro code   0x800'3820   0x912  json.o [1]
+  .text              ro code   0x800'4132     0x2  startup_stm32l010xb.o [1]
+  .text              ro code   0x800'4134   0xc4c  stm32l0xx_hal_uart.o [1]
+  .text              ro code   0x800'4d80   0x260  stm32l0xx_hal_gpio.o [1]
+  .text              ro code   0x800'4fe0    0x14  memset.o [4]
+  .text              ro code   0x800'4ff4     0x8  heaptramp0.o [2]
+  .text              ro code   0x800'4ffc   0x294  md5.o [1]
+  .text              ro code   0x800'5290    0x50  adc.o [1]
+  .text              ro code   0x800'52e0    0x98  wt0.o [1]
+  .text              ro code   0x800'5378     0x2  IntDivZer.o [4]
+  .text              ro code   0x800'537a     0x2  startup_stm32l010xb.o [1]
+  .text              ro code   0x800'537c   0x154  stm32l0xx_hal_msp.o [1]
+  .text              ro code   0x800'54d0    0xb6  stm32l0xx_hal_dma.o [1]
+  .text              ro code   0x800'5586     0x2  stm32l0xx_hal_uart.o [1]
+  .text              ro code   0x800'5588     0x2  stm32l0xx_hal_uart.o [1]
+  .text              ro code   0x800'558a     0x2  startup_stm32l010xb.o [1]
+  .text              ro code   0x800'558c     0x2  stm32l0xx_hal_uart_ex.o [1]
+  .text              ro code   0x800'558e     0x2  startup_stm32l010xb.o [1]
+  .text              ro code   0x800'5590   0x80c  stm32l0xx_hal_rcc.o [1]
+  .text              ro code   0x800'5d9c    0x32  I64Mul.o [4]
+  .text              ro code   0x800'5dce    0x6a  I64DivMod.o [4]
+  .text              ro code   0x800'5e38     0xc  stm32l0xx_hal.o [1]
+  .text              ro code   0x800'5e44     0x2  stm32l0xx_hal_uart.o [1]
+  .text              ro code   0x800'5e46     0x2  stm32l0xx_hal_uart.o [1]
+  .text              ro code   0x800'5e48    0x4e  ABImemset.o [4]
+  .text              ro code   0x800'5e96     0x2  startup_stm32l010xb.o [1]
+  .text              ro code   0x800'5e98    0xc8  stm32l0xx_hal_adc_ex.o [1]
+  .text              ro code   0x800'5f60   0x528  stm32l0xx_hal_adc.o [1]
+  .text              ro code   0x800'6488    0x28  wt01.o [1]
+  .text              ro code   0x800'64b0   0x114  stm32l0xx_hal_cortex.o [1]
+  .text              ro code   0x800'65c4    0x50  stm32l0xx_hal.o [1]
+  .text              ro code   0x800'6614     0x2  I64DivZer.o [4]
+  .text              ro code   0x800'6616     0x2  startup_stm32l010xb.o [1]
+  .text              ro code   0x800'6618   0x6ee  stm32l0xx_hal_rtc.o [1]
+  .text              ro code   0x800'6d06     0x2  startup_stm32l010xb.o [1]
+  .text              ro code   0x800'6d08   0x412  main.o [1]
+  .text              ro code   0x800'711a     0x2  stm32l0xx_hal_rtc_ex.o [1]
+  .text              ro code   0x800'711c   0x15c  clock.o [1]
+  .text              ro code   0x800'7278    0x54  stm32l0xx_hal.o [1]
+  .text              ro code   0x800'72cc    0x38  stm32l0xx_hal_pwr_ex.o [1]
+  .text              ro code   0x800'7304   0x134  schedule.o [1]
+  .text              ro code   0x800'7438    0x14  stm32l0xx_hal_pwr.o [1]
+  .text              ro code   0x800'744c   0x1b8  stm32l0xx_hal_rcc_ex.o [1]
+  .text              ro code   0x800'7604   0x104  stm32l0xx_hal_lptim.o [1]
+  .text              ro code   0x800'7708   0x18e  stm32l0xx_hal_rtc_ex.o [1]
+  .text              ro code   0x800'7896     0x2  startup_stm32l010xb.o [1]
+  .text              ro code   0x800'7898    0xf8  mktime.o [2]
+  .text              ro code   0x800'7990    0x18  localtim.o [2]
+  .text              ro code   0x800'79a8     0x2  stm32l0xx_hal_rtc_ex.o [1]
+  .text              ro code   0x800'79aa     0x2  stm32l0xx_hal_rtc_ex.o [1]
+  .text              ro code   0x800'79ac     0x2  stm32l0xx_hal_rtc_ex.o [1]
+  .text              ro code   0x800'79ae     0x2  startup_stm32l010xb.o [1]
+  .text              ro code   0x800'79b0    0x6c  xDaysTo.o [2]
+  .text              ro code   0x800'7a1c   0x114  xttotm.o [2]
+  .text              ro code   0x800'7b30     0x4  xTzoff_nop.o [2]
+  .text              ro code   0x800'7b34     0x6  xisdst_nop.o [2]
+  .text              ro code   0x800'7b3a     0x2  startup_stm32l010xb.o [1]
+  .rodata            const     0x800'7b3c   0x100  md5.o [1]
+  .rodata            const     0x800'7c3c   0x100  md5.o [1]
+  .text              ro code   0x800'7d3c    0x70  system_stm32l0xx.o [1]
+  .text              ro code   0x800'7dac    0x44  stm32l0xx_it.o [1]
+  .text              ro code   0x800'7df0    0x18  stm32l0xx_hal.o [1]
+  .text              ro code   0x800'7e08    0x3c  startup_stm32l010xb.o [1]
+  .text              ro code   0x800'7e44    0x3c  zero_init3.o [4]
+  .text              ro code   0x800'7e80    0x30  copy_init3.o [4]
+  .rodata            const     0x800'7eb0    0x2c  misc.o [1]
+  .rodata            const     0x800'7edc    0x2c  sim7020.o [1]
+  .rodata            const     0x800'7f08    0x28  misc.o [1]
+  .text              ro code   0x800'7f30    0x28  data_init.o [4]
+  .rodata            const     0x800'7f58    0x24  protocol.o [1]
+  .iar.init_table    const     0x800'7f7c    0x24  - Linker created -
+  .rodata            const     0x800'7fa0    0x20  sim7020.o [1]
+  .text              ro code   0x800'7fc0    0x1e  cmain.o [4]
+  .text              ro code   0x800'7fde     0x4  low_level_init.o [2]
+  .text              ro code   0x800'7fe2     0x8  exit.o [2]
+  .text              ro code   0x800'7fea     0x2  startup_stm32l010xb.o [1]
+  .text              ro code   0x800'7fec     0xa  cexit.o [4]
+  .text              ro code   0x800'7ff6     0x2  startup_stm32l010xb.o [1]
+  .rodata            const     0x800'7ff8    0x1c  protocol.o [1]
+  .rodata            const     0x800'8014    0x1c  sim7020.o [1]
+  .rodata            const     0x800'8030    0x1c  sim7020.o [1]
+  .rodata            const     0x800'804c    0x1c  sim7020.o [1]
+  .rodata            const     0x800'8068    0x1c  sim7020.o [1]
+  .rodata            const     0x800'8084    0x1c  sim7020.o [1]
+  .rodata            const     0x800'80a0    0x1c  sim7020.o [1]
+  .rodata            const     0x800'80bc    0x1c  sim7020.o [1]
+  .rodata            const     0x800'80d8    0x1c  sim7020.o [1]
+  .rodata            const     0x800'80f4    0x18  sim7020.o [1]
+  .rodata            const     0x800'810c    0x18  sim7020.o [1]
+  .rodata            const     0x800'8124    0x18  sim7020.o [1]
+  .rodata            const     0x800'813c    0x18  sim7020.o [1]
+  .rodata            const     0x800'8154    0x18  sim7020.o [1]
+  .rodata            const     0x800'816c    0x18  sim7020.o [1]
+  .rodata            const     0x800'8184    0x18  sim7020.o [1]
+  .rodata            const     0x800'819c    0x14  sim7020.o [1]
+  .rodata            const     0x800'81b0    0x14  sim7020.o [1]
+  .rodata            const     0x800'81c4    0x10  sim7020.o [1]
+  .rodata            const     0x800'81d4    0x10  sim7020.o [1]
+  .rodata            const     0x800'81e4    0x10  sim7020.o [1]
+  .rodata            const     0x800'81f4    0x10  sim7020.o [1]
+  .rodata            const     0x800'8204    0x10  sim7020.o [1]
+  .rodata            const     0x800'8214    0x10  sim7020.o [1]
+  .rodata            const     0x800'8224    0x10  system_stm32l0xx.o [1]
+  Initializer bytes  const     0x800'8234    0x10  <for P2-1>
+  .text              ro code   0x800'8244     0x2  startup_stm32l010xb.o [1]
+  .rodata            const     0x800'8248     0xc  protocol.o [1]
+  .rodata            const     0x800'8254     0xc  protocol.o [1]
+  .rodata            const     0x800'8260     0xc  sim7020.o [1]
+  .rodata            const     0x800'826c     0xc  sim7020.o [1]
+  .rodata            const     0x800'8278     0xc  sim7020.o [1]
+  .rodata            const     0x800'8284     0xc  sim7020.o [1]
+  .rodata            const     0x800'8290     0xc  sim7020.o [1]
+  .rodata            const     0x800'829c     0xc  sim7020.o [1]
+  .rodata            const     0x800'82a8     0xc  sim7020.o [1]
+  .rodata            const     0x800'82b4     0xc  sim7020.o [1]
+  .rodata            const     0x800'82c0     0xc  sim7020.o [1]
+  .rodata            const     0x800'82cc     0xc  sim7020.o [1]
+  .rodata            const     0x800'82d8     0xc  sim7020.o [1]
+  .rodata            const     0x800'82e4     0xc  sim7020.o [1]
+  .rodata            const     0x800'82f0     0xc  sim7020.o [1]
+  .rodata            const     0x800'82fc     0xc  sim7020.o [1]
+  .rodata            const     0x800'8308     0xc  system_stm32l0xx.o [1]
+  .text              ro code   0x800'8314     0xc  cstartup_M.o [4]
+  .rodata            const     0x800'8320     0x8  protocol.o [1]
+  .rodata            const     0x800'8328     0x8  protocol.o [1]
+  .rodata            const     0x800'8330     0x8  protocol.o [1]
+  .rodata            const     0x800'8338     0x8  protocol.o [1]
+  .rodata            const     0x800'8340     0x8  sim7020.o [1]
+  .rodata            const     0x800'8348     0x8  sim7020.o [1]
+  .rodata            const     0x800'8350     0x8  sim7020.o [1]
+  .rodata            const     0x800'8358     0x8  sim7020.o [1]
+  .rodata            const     0x800'8360     0x8  sim7020.o [1]
+  .rodata            const     0x800'8368     0x8  sim7020.o [1]
+  .rodata            const     0x800'8370     0x8  sim7020_phy.o [1]
+  .rodata            const     0x800'8378     0x8  system_stm32l0xx.o [1]
+  .rodata            const     0x800'8380     0x0  zero_init3.o [4]
+  .rodata            const     0x800'8380     0x0  copy_init3.o [4]
+                             - 0x800'8380  0x82c0
+
+"P2", part 1 of 3:                           0x10
+  P2-1                        0x2000'0000     0xd  <Init block>
+    .data            inited   0x2000'0000     0x4  adc.o [1]
+    .data            inited   0x2000'0004     0x4  stm32l0xx_hal.o [1]
+    .data            inited   0x2000'0008     0x4  system_stm32l0xx.o [1]
+    .data            inited   0x2000'000c     0x1  stm32l0xx_hal.o [1]
+                            - 0x2000'000d     0xd
+
+"P2", part 2 of 3:                         0x1670
+  .bss               zero     0x2000'0010   0x404  sim7020_phy.o [1]
+  .bss               zero     0x2000'0414   0x404  uart_simple_protocol.o [1]
+  .bss               zero     0x2000'0818   0x404  uart_simple_protocol.o [1]
+  .bss               zero     0x2000'0c1c   0x200  sim7020_phy.o [1]
+  .bss               zero     0x2000'0e1c   0x1d8  dlmalloc.o [2]
+  .bss               zero     0x2000'0ff4   0x100  sim7020_phy.o [1]
+  .bss               zero     0x2000'10f4    0xc8  md5.o [1]
+  .bss               zero     0x2000'11bc    0x80  main.o [1]
+  .bss               zero     0x2000'123c    0x80  main.o [1]
+  .bss               zero     0x2000'12bc    0x5c  main.o [1]
+  .bss               zero     0x2000'1318    0x50  sim7020.o [1]
+  .bss               zero     0x2000'1368    0x50  sim7020.o [1]
+  .bss               zero     0x2000'13b8    0x48  protocol.o [1]
+  .bss               zero     0x2000'1400    0x30  main.o [1]
+  .bss               zero     0x2000'1430    0x30  schedule.o [1]
+  .bss               zero     0x2000'1460    0x2c  xttotm.o [2]
+  .bss               zero     0x2000'148c    0x28  main.o [1]
+  .bss               zero     0x2000'14b4    0x24  main.o [1]
+  .bss               zero     0x2000'14d8    0x24  protocol.o [1]
+  .bss               zero     0x2000'14fc    0x24  sim7020_tcp.o [1]
+  .bss               zero     0x2000'1520    0x18  wtimer.o [1]
+  .bss               zero     0x2000'1538    0x18  dlmalloc.o [2]
+  .bss               zero     0x2000'1550    0x14  main.o [1]
+  .bss               zero     0x2000'1564    0x10  md5.o [1]
+  .bss               zero     0x2000'1574     0xc  main.o [1]
+  .bss               zero     0x2000'1580     0xc  main.o [1]
+  .bss               zero     0x2000'158c     0xc  sim7020.o [1]
+  .bss               zero     0x2000'1598     0xc  sim7020_phy.o [1]
+  .bss               zero     0x2000'15a4     0xc  sim7020_phy.o [1]
+  .bss               zero     0x2000'15b0     0xc  sim7020_phy.o [1]
+  .bss               zero     0x2000'15bc     0xc  sim7020_phy.o [1]
+  .bss               zero     0x2000'15c8     0xc  sim7020_phy.o [1]
+  .bss               zero     0x2000'15d4     0xc  sim7020_phy.o [1]
+  .bss               zero     0x2000'15e0     0x8  sim7020_phy.o [1]
+  .bss               zero     0x2000'15e8     0x8  sim7020_phy.o [1]
+  .bss               zero     0x2000'15f0     0x8  sim7020_phy.o [1]
+  .bss               zero     0x2000'15f8     0x8  sim7020_phy.o [1]
+  .bss               zero     0x2000'1600     0x8  uart_simple_protocol.o [1]
+  .bss               zero     0x2000'1608     0x4  adc.o [1]
+  .bss               zero     0x2000'160c     0x4  adc.o [1]
+  .bss               zero     0x2000'1610     0x4  adc.o [1]
+  .bss               zero     0x2000'1614     0x4  clock.o [1]
+  .bss               zero     0x2000'1618     0x4  clock.o [1]
+  .bss               zero     0x2000'161c     0x4  clock.o [1]
+  .bss               zero     0x2000'1620     0x4  clock.o [1]
+  .bss               zero     0x2000'1624     0x4  clock.o [1]
+  .bss               zero     0x2000'1628     0x4  main.o [1]
+  .bss               zero     0x2000'162c     0x4  protocol.o [1]
+  .bss               zero     0x2000'1630     0x4  sim7020.o [1]
+  .bss               zero     0x2000'1634     0x4  sim7020_phy.o [1]
+  .bss               zero     0x2000'1638     0x4  sim7020_tcp.o [1]
+  .bss               zero     0x2000'163c     0x4  stm32l0xx_hal.o [1]
+  .bss               zero     0x2000'1640     0x4  uart_simple_protocol.o [1]
+  .bss               zero     0x2000'1644     0x4  wtimer.o [1]
+  .bss               zero     0x2000'1648     0x4  wtimer.o [1]
+  .bss               zero     0x2000'164c     0x4  wtimer.o [1]
+  .bss               zero     0x2000'1650     0x4  wtimer.o [1]
+  .bss               zero     0x2000'1654     0x4  wtimer.o [1]
+  .bss               zero     0x2000'1658     0x4  wtimer.o [1]
+  .bss               zero     0x2000'165c     0x4  wtimer.o [1]
+  .bss               zero     0x2000'1660     0x4  wtimer.o [1]
+  .bss               zero     0x2000'1664     0x4  wtimer.o [1]
+  .bss               zero     0x2000'1668     0x4  xgetmemchunk.o [2]
+  .bss               zero     0x2000'166c     0x2  schedule.o [1]
+  .bss               zero     0x2000'166e     0x2  sim7020.o [1]
+  .bss               zero     0x2000'1670     0x2  sim7020_phy.o [1]
+  .bss               zero     0x2000'1672     0x2  sim7020_phy.o [1]
+  .bss               zero     0x2000'1674     0x2  uart_simple_protocol.o [1]
+  .bss               zero     0x2000'1676     0x2  uart_simple_protocol.o [1]
+  .bss               zero     0x2000'1678     0x1  protocol.o [1]
+  .bss               zero     0x2000'1679     0x1  sim7020_phy.o [1]
+  .bss               zero     0x2000'167a     0x1  sim7020_phy.o [1]
+  .bss               zero     0x2000'167b     0x1  sim7020_phy.o [1]
+  .bss               zero     0x2000'167c     0x1  wtimer.o [1]
+                            - 0x2000'167d  0x166d
+
+"P2", part 3 of 3:                          0x900
+  CSTACK                      0x2000'1680   0x400  <Block>
+    CSTACK           uninit   0x2000'1680   0x400  <Block tail>
+  HEAP                        0x2000'1a80   0x500  <Block>
+    HEAP             uninit   0x2000'1a80   0x500  <Block tail>
+                            - 0x2000'1f80   0x900
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'8380   0x801'ffff  0x1'7c80
+  0x2000'1f80  0x2000'4fff    0x3080
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x166d:
+          0x2000'0010  0x166d
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x10 (123% of destination):
+           0x800'8234    0x10
+    1 destination range, total size 0xd:
+          0x2000'0000     0xd
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                   ro code  ro data  rw data
+    ------                   -------  -------  -------
+command line/config:
+    --------------------------------------------------
+    Total:
+
+C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj: [1]
+    adc.o                         80        4       16
+    clock.o                      348                20
+    json.o                     2'322
+    main.o                     1'042               520
+    md5.o                        660      512      216
+    misc.o                     1'512       84
+    protocol.o                   876      120      113
+    schedule.o                   308                50
+    sim7020.o                  3'220      822      178
+    sim7020_phy.o                740        8    1'911
+    sim7020_tcp.o                144                40
+    startup_stm32l010xb.o        282
+    stm32l0xx_hal.o              200        5        9
+    stm32l0xx_hal_adc.o        1'320
+    stm32l0xx_hal_adc_ex.o       200
+    stm32l0xx_hal_cortex.o       276
+    stm32l0xx_hal_dma.o          182
+    stm32l0xx_hal_gpio.o         608
+    stm32l0xx_hal_lptim.o        260
+    stm32l0xx_hal_msp.o          340
+    stm32l0xx_hal_pwr.o           20
+    stm32l0xx_hal_pwr_ex.o        56
+    stm32l0xx_hal_rcc.o        2'060
+    stm32l0xx_hal_rcc_ex.o       440
+    stm32l0xx_hal_rtc.o        1'774
+    stm32l0xx_hal_rtc_ex.o       406
+    stm32l0xx_hal_uart.o       3'156
+    stm32l0xx_hal_uart_ex.o        2
+    stm32l0xx_it.o                68
+    system_stm32l0xx.o           112       40        4
+    uart_simple_protocol.o       176             2'072
+    wt0.o                        152
+    wt01.o                        40
+    wtimer.o                     604                61
+    --------------------------------------------------
+    Total:                    23'986    1'595    5'210
+
+dl6M_tlf.a: [2]
+    abort.o                       10
+    dlmalloc.o                 5'724               496
+    exit.o                         8
+    heaptramp0.o                   8
+    localtim.o                    24
+    low_level_init.o               4
+    mktime.o                     248
+    xDaysTo.o                    108
+    xTzoff_nop.o                   4
+    xgetmemchunk.o                44                 4
+    xisdst_nop.o                   6
+    xttotm.o                     276                44
+    --------------------------------------------------
+    Total:                     6'464               544
+
+m6M_tl.a: [3]
+    FltAddSub.o                  288
+    FltCmpGe.o                    40
+    FltCmpLe.o                    38
+    FltDiv.o                     170
+    FltMul.o                     176
+    FltToS32.o                    58
+    IxxToFlt.o                    54
+    --------------------------------------------------
+    Total:                       824
+
+rt6M_tl.a: [4]
+    ABImemcpy.o                   52
+    ABImemset.o                   78
+    I32DivModFast.o              224
+    I64DivMod.o                  106
+    I64DivZer.o                    2
+    I64Mul.o                      50
+    IntDivZer.o                    2
+    cexit.o                       10
+    cmain.o                       30
+    copy_init3.o                  48
+    cstartup_M.o                  12
+    data_init.o                   40
+    memset.o                      20
+    zero_init3.o                  60
+    --------------------------------------------------
+    Total:                       734
+
+shb_l.a: [5]
+    exit.o                        20
+    --------------------------------------------------
+    Total:                        20
+
+    Gaps                                    2
+    Linker created                         39    2'304
+------------------------------------------------------
+    Grand Total:              32'028    1'636    8'058
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'7f7c          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'7fa0          --   Gb  - Linker created -
+?main                    0x800'7fc1         Code  Gb  cmain.o [4]
+ADC_ConversionStop       0x800'63ed   0x62  Code  Lc  stm32l0xx_hal_adc.o [1]
+ADC_DelayMicroSecond     0x800'6459   0x22  Code  Lc  stm32l0xx_hal_adc.o [1]
+ADC_Disable              0x800'6365   0x88  Code  Lc  stm32l0xx_hal_adc.o [1]
+ADC_Enable               0x800'62d9   0x86  Code  Lc  stm32l0xx_hal_adc.o [1]
+AHBPrescTable            0x800'8224   0x10  Data  Gb  system_stm32l0xx.o [1]
+APBPrescTable            0x800'8378    0x8  Data  Gb  system_stm32l0xx.o [1]
+CSTACK$$Base            0x2000'1680          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'1a80          --   Gb  - Linker created -
+Error_Handler            0x800'7119    0x2  Code  Gb  main.o [1]
+HAL_ADCEx_Calibration_Start
+                         0x800'5e99   0xc4  Code  Gb  stm32l0xx_hal_adc_ex.o [1]
+HAL_ADC_ConfigChannel    0x800'6253   0x86  Code  Gb  stm32l0xx_hal_adc.o [1]
+HAL_ADC_GetValue         0x800'624d    0x6  Code  Gb  stm32l0xx_hal_adc.o [1]
+HAL_ADC_Init             0x800'5f61  0x20a  Code  Gb  stm32l0xx_hal_adc.o [1]
+HAL_ADC_MspInit          0x800'5395   0x18  Code  Gb  stm32l0xx_hal_msp.o [1]
+HAL_ADC_Start            0x800'616b   0x6c  Code  Gb  stm32l0xx_hal_adc.o [1]
+HAL_ADC_Stop             0x800'61dd   0x52  Code  Gb  stm32l0xx_hal_adc.o [1]
+HAL_DBGMCU_DisableDBGSleepMode
+                         0x800'72a1    0xc  Code  Gb  stm32l0xx_hal.o [1]
+HAL_DBGMCU_DisableDBGStandbyMode
+                         0x800'72b9    0xc  Code  Gb  stm32l0xx_hal.o [1]
+HAL_DBGMCU_DisableDBGStopMode
+                         0x800'72ad    0xc  Code  Gb  stm32l0xx_hal.o [1]
+HAL_DMA_Abort            0x800'54d1   0x54  Code  Gb  stm32l0xx_hal_dma.o [1]
+HAL_DMA_Abort_IT         0x800'5525   0x5e  Code  Gb  stm32l0xx_hal_dma.o [1]
+HAL_DMA_GetError         0x800'5583    0x4  Code  Gb  stm32l0xx_hal_dma.o [1]
+HAL_GPIO_Init            0x800'4d81  0x1fe  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GPIO_TogglePin       0x800'4fa3   0x1a  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GPIO_WritePin        0x800'4f89   0x1a  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GetTick              0x800'5e39    0xc  Code  Wk  stm32l0xx_hal.o [1]
+HAL_IncTick              0x800'7df1   0x18  Code  Wk  stm32l0xx_hal.o [1]
+HAL_Init                 0x800'7279   0x28  Code  Gb  stm32l0xx_hal.o [1]
+HAL_InitTick             0x800'65c5   0x50  Code  Wk  stm32l0xx_hal.o [1]
+HAL_LPTIM_Counter_Start
+                         0x800'76b9   0x4a  Code  Gb  stm32l0xx_hal_lptim.o [1]
+HAL_LPTIM_Init           0x800'7605   0xa8  Code  Gb  stm32l0xx_hal_lptim.o [1]
+HAL_LPTIM_MspInit        0x800'53ad   0x18  Code  Gb  stm32l0xx_hal_msp.o [1]
+HAL_MspInit              0x800'537d   0x18  Code  Gb  stm32l0xx_hal_msp.o [1]
+HAL_NVIC_EnableIRQ       0x800'6591    0xe  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority     0x800'657d   0x14  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_PWREx_EnableFastWakeUp
+                         0x800'72cd    0xe  Code  Gb  stm32l0xx_hal_pwr_ex.o [1]
+HAL_PWREx_EnableLowPowerRunMode
+                         0x800'72e9   0x16  Code  Gb  stm32l0xx_hal_pwr_ex.o [1]
+HAL_PWREx_EnableUltraLowPower
+                         0x800'72db    0xe  Code  Gb  stm32l0xx_hal_pwr_ex.o [1]
+HAL_PWR_EnableBkUpAccess
+                         0x800'7439    0xe  Code  Gb  stm32l0xx_hal_pwr.o [1]
+HAL_RCCEx_PeriphCLKConfig
+                         0x800'744d  0x184  Code  Gb  stm32l0xx_hal_rcc_ex.o [1]
+HAL_RCC_ClockConfig      0x800'5ad1  0x1aa  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq      0x800'5d2d    0x6  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq     0x800'5d33   0x18  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq     0x800'5d51   0x18  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                         0x800'5c95   0x98  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_OscConfig        0x800'5591  0x528  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RTCEx_AlarmBEventCallback
+                         0x800'711b    0x2  Code  Wk  stm32l0xx_hal_rtc_ex.o [1]
+HAL_RTCEx_SetTimeStamp_IT
+                         0x800'7709   0x98  Code  Gb  stm32l0xx_hal_rtc_ex.o [1]
+HAL_RTCEx_TamperTimeStampIRQHandler
+                         0x800'77b5   0xc0  Code  Gb  stm32l0xx_hal_rtc_ex.o [1]
+HAL_RTC_AlarmAEventCallback
+                         0x800'6d17   0x1e  Code  Gb  main.o [1]
+HAL_RTC_AlarmIRQHandler
+                         0x800'6be9   0x60  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_RTC_GetDate          0x800'6999   0x4e  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_RTC_GetTime          0x800'6825   0x62  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_RTC_Init             0x800'6619   0xe0  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_RTC_MspInit          0x800'547f   0x2a  Code  Gb  stm32l0xx_hal_msp.o [1]
+HAL_RTC_SetAlarm_IT      0x800'69f5  0x1e2  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_RTC_SetDate          0x800'688d  0x10c  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_RTC_SetTime          0x800'66f9  0x12c  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_RTC_WaitForSynchro   0x800'6c4d   0x32  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_SYSTICK_Config       0x800'659f    0xc  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_UARTEx_WakeupCallback
+                         0x800'558d    0x2  Code  Wk  stm32l0xx_hal_uart_ex.o [1]
+HAL_UART_AbortReceive    0x800'4349   0x78  Code  Gb  stm32l0xx_hal_uart.o [1]
+HAL_UART_AbortReceive_IT
+                         0x800'43c3   0x96  Code  Gb  stm32l0xx_hal_uart.o [1]
+HAL_UART_IRQHandler      0x800'4461  0x1c2  Code  Gb  stm32l0xx_hal_uart.o [1]
+HAL_UART_Init            0x800'4135   0x7a  Code  Gb  stm32l0xx_hal_uart.o [1]
+HAL_UART_MspInit         0x800'53c5   0xba  Code  Gb  stm32l0xx_hal_msp.o [1]
+HAL_UART_Receive_IT      0x800'423d   0xf4  Code  Gb  stm32l0xx_hal_uart.o [1]
+HAL_UART_Transmit_IT     0x800'41b5   0x88  Code  Gb  stm32l0xx_hal_uart.o [1]
+HEAP$$Base              0x2000'1a80          --   Gb  - Linker created -
+HEAP$$Limit             0x2000'1f80          --   Gb  - Linker created -
+HardFault_Handler        0x800'7daf    0x4  Code  Gb  stm32l0xx_it.o [1]
+LPUART1_IRQHandler       0x800'7ddb    0xa  Code  Gb  stm32l0xx_it.o [1]
+MX_ADC_Init              0x800'6e3b   0x76  Code  Lc  main.o [1]
+MX_GPIO_Init             0x800'7031   0x9e  Code  Lc  main.o [1]
+MX_LPTIM1_Init           0x800'6eb1   0x26  Code  Lc  main.o [1]
+MX_LPUART1_UART_Init     0x800'6ed7   0x2e  Code  Lc  main.o [1]
+MX_RTC_Init              0x800'6f3d   0xd8  Code  Lc  main.o [1]
+MX_USART2_UART_Init      0x800'6f05   0x30  Code  Lc  main.o [1]
+NMI_Handler              0x800'7dad    0x2  Code  Gb  stm32l0xx_it.o [1]
+NVIC_EnableIRQ           0x800'64b1    0xe  Code  Lc  stm32l0xx_hal_cortex.o [1]
+NVIC_SetPriority         0x800'64bf   0x8c  Code  Lc  stm32l0xx_hal_cortex.o [1]
+PLLMulTable              0x800'8308    0xc  Data  Gb  system_stm32l0xx.o [1]
+PendSV_Handler           0x800'7db5    0x2  Code  Gb  stm32l0xx_it.o [1]
+RADIO_LPTIM_Init         0x800'7305   0x2a  Code  Gb  schedule.o [1]
+RTC_Bcd2ToByte           0x800'6cf3   0x14  Code  Gb  stm32l0xx_hal_rtc.o [1]
+RTC_ByteToBcd2           0x800'6cd5   0x1e  Code  Gb  stm32l0xx_hal_rtc.o [1]
+RTC_EnterInitMode        0x800'6c85   0x3c  Code  Gb  stm32l0xx_hal_rtc.o [1]
+RTC_IRQHandler           0x800'7dbf   0x12  Code  Gb  stm32l0xx_it.o [1]
+Region$$Table$$Base      0x800'7f7c          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'7fa0          --   Gb  - Linker created -
+SVC_Handler              0x800'7db3    0x2  Code  Gb  stm32l0xx_it.o [1]
+ScheduleTask             0x800'33d1   0x34  Code  Gb  wtimer.o [1]
+Schedule_init            0x800'73af   0x54  Code  Gb  schedule.o [1]
+Sim7020_Phy_Rx_Callback
+                         0x800'2dbd   0x20  Code  Gb  sim7020_phy.o [1]
+SysTick_Config           0x800'654b   0x32  Code  Lc  stm32l0xx_hal_cortex.o [1]
+SysTick_Handler          0x800'7db7    0x8  Code  Gb  stm32l0xx_it.o [1]
+SystemClock_Config       0x800'6d95   0xa6  Code  Gb  main.o [1]
+SystemCoreClock         0x2000'0008    0x4  Data  Gb  system_stm32l0xx.o [1]
+SystemInit               0x800'7d3d   0x4c  Code  Gb  system_stm32l0xx.o [1]
+UART_AdvFeatureConfig    0x800'49b1   0xde  Code  Gb  stm32l0xx_hal_uart.o [1]
+UART_CheckIdleState      0x800'4a8f   0x60  Code  Gb  stm32l0xx_hal_uart.o [1]
+UART_DMAAbortOnError     0x800'4bad   0x18  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_DMARxOnlyAbortCallback
+                         0x800'4bc5   0x2a  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_EndRxTransfer       0x800'4b61   0x22  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_EndTransmit_IT      0x800'4c7d   0x20  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_RxISR_16BIT         0x800'4d11   0x6c  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_RxISR_8BIT          0x800'4c9d   0x6c  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_SendString          0x800'2ad1   0x6c  Code  Gb  uart_simple_protocol.o [1]
+UART_SetConfig           0x800'462d  0x378  Code  Gb  stm32l0xx_hal_uart.o [1]
+UART_TxISR_16BIT         0x800'4c33   0x4a  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_TxISR_8BIT          0x800'4bef   0x44  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_WaitOnFlagUntilTimeout
+                         0x800'4af9   0x64  Code  Gb  stm32l0xx_hal_uart.o [1]
+USART2_IRQHandler        0x800'7dd1    0xa  Code  Gb  stm32l0xx_it.o [1]
+USP_Init                 0x800'2aa9   0x28  Code  Gb  uart_simple_protocol.o [1]
+_Ttotm_ts               0x2000'1460   0x2c  Data  Lc  xttotm.o [2]
+_Tzoff                   0x800'7b31    0x4  Code  Gb  xTzoff_nop.o [2]
+__aeabi_cfcmple          0x800'342d         Code  Gb  FltCmpLe.o [3]
+__aeabi_cfrcmple         0x800'3405         Code  Gb  FltCmpGe.o [3]
+__aeabi_f2iz             0x800'34fd         Code  Gb  FltToS32.o [3]
+__aeabi_fadd             0x800'361f         Code  Gb  FltAddSub.o [3]
+__aeabi_fdiv             0x800'3453         Code  Gb  FltDiv.o [3]
+__aeabi_fmul             0x800'356f         Code  Gb  FltMul.o [3]
+__aeabi_fsub             0x800'368f         Code  Gb  FltAddSub.o [3]
+__aeabi_i2f              0x800'3559         Code  Gb  IxxToFlt.o [3]
+__aeabi_idiv             0x800'376b         Code  Gb  I32DivModFast.o [4]
+__aeabi_idiv0            0x800'5379         Code  Gb  IntDivZer.o [4]
+__aeabi_idivmod          0x800'376b         Code  Gb  I32DivModFast.o [4]
+__aeabi_ldiv0            0x800'6615         Code  Gb  I64DivZer.o [4]
+__aeabi_lmul             0x800'5d9d         Code  Gb  I64Mul.o [4]
+__aeabi_memcpy4          0x800'1755         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8          0x800'1755         Code  Gb  ABImemcpy.o [4]
+__aeabi_memset           0x800'5e49         Code  Gb  ABImemset.o [4]
+__aeabi_ui2f             0x800'3539         Code  Gb  IxxToFlt.o [3]
+__aeabi_uidiv            0x800'3771         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod         0x800'3771         Code  Gb  I32DivModFast.o [4]
+__aeabi_uldivmod         0x800'5dcf         Code  Gb  I64DivMod.o [4]
+__clock                 0x2000'1614    0x4  Data  Lc  clock.o [1]
+__cmain                  0x800'7fc1         Code  Gb  cmain.o [4]
+__data_GetMemChunk       0x800'1729   0x2c  Code  Gb  xgetmemchunk.o [2]
+__data_GetMemChunk::start
+                        0x2000'1668    0x4  Data  Lc  xgetmemchunk.o [2]
+__exit                   0x800'1789   0x14  Code  Gb  exit.o [5]
+__iar_Daysto32           0x800'79b1   0x3a  Code  Gb  xDaysTo.o [2]
+__iar_Isdst32            0x800'7b35    0x6  Code  Gb  xisdst_nop.o [2]
+__iar_Memset4_word       0x800'5e69         Code  Gb  ABImemset.o [4]
+__iar_Memset_word        0x800'5e55         Code  Gb  ABImemset.o [4]
+__iar_Ttotm32            0x800'7a1d   0xd6  Code  Gb  xttotm.o [2]
+__iar_copy_init3         0x800'7e81   0x30  Code  Gb  copy_init3.o [4]
+__iar_data_init3         0x800'7f31   0x28  Code  Gb  data_init.o [4]
+__iar_dlfree             0x800'1135  0x5de  Code  Gb  dlmalloc.o [2]
+__iar_dlmalloc           0x800'014d  0xfda  Code  Gb  dlmalloc.o [2]
+__iar_program_start      0x800'8315         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3         0x800'7e45   0x3c  Code  Gb  zero_init3.o [4]
+__localtime32            0x800'7991   0x18  Code  Gb  localtim.o [2]
+__low_level_init         0x800'7fdf    0x4  Code  Gb  low_level_init.o [2]
+__mktime32               0x800'7899   0xf8  Code  Gb  mktime.o [2]
+__vector_table           0x800'0000         Data  Gb  startup_stm32l010xb.o [1]
+__wtimer_cc_get         0x2000'165c    0x4  Data  Gb  wtimer.o [1]
+__wtimer_cc_irq_disable
+                        0x2000'1654    0x4  Data  Gb  wtimer.o [1]
+__wtimer_cc_irq_enable  0x2000'1650    0x4  Data  Gb  wtimer.o [1]
+__wtimer_cc_set         0x2000'1658    0x4  Data  Gb  wtimer.o [1]
+__wtimer_check_cc_irq   0x2000'1664    0x4  Data  Gb  wtimer.o [1]
+__wtimer_cnt_get        0x2000'1660    0x4  Data  Gb  wtimer.o [1]
+__wtimer_globla_irq_disable
+                        0x2000'164c    0x4  Data  Gb  wtimer.o [1]
+__wtimer_globla_irq_enable
+                        0x2000'1648    0x4  Data  Gb  wtimer.o [1]
+_call_main               0x800'7fcd         Code  Gb  cmain.o [4]
+_exit                    0x800'7fed         Code  Gb  cexit.o [4]
+_gm_                    0x2000'0e1c  0x1d8  Data  Lc  dlmalloc.o [2]
+_main                    0x800'7fdb         Code  Gb  cmain.o [4]
+abort                    0x800'171d    0xa  Code  Gb  abort.o [2]
+adc                     0x2000'1608    0x4  Data  Lc  adc.o [1]
+adc_get_voltage          0x800'52a3   0x2e  Code  Gb  adc.o [1]
+adc_init                 0x800'5291   0x12  Code  Gb  adc.o [1]
+adc_value               0x2000'160c    0x4  Data  Gb  adc.o [1]
+ax5043_disable_global_irq
+                         0x800'7333    0x4  Code  Gb  schedule.o [1]
+ax5043_enable_global_irq
+                         0x800'732f    0x4  Code  Gb  schedule.o [1]
+calls                   0x2000'1678    0x1  Data  Gb  protocol.o [1]
+clock_add_alarm          0x800'718d   0xbe  Code  Gb  clock.o [1]
+clock_alarm             0x2000'1620    0x4  Data  Lc  clock.o [1]
+clock_callback           0x800'7251    0xc  Code  Gb  clock.o [1]
+clock_date              0x2000'161c    0x4  Data  Lc  clock.o [1]
+clock_desc              0x2000'1580    0xc  Data  Gb  main.o [1]
+clock_function          0x2000'1624    0x4  Data  Gb  clock.o [1]
+clock_init               0x800'7171   0x1c  Code  Gb  clock.o [1]
+clock_set_alarm_callback
+                         0x800'724b    0x6  Code  Gb  clock.o [1]
+clock_time              0x2000'1618    0x4  Data  Lc  clock.o [1]
+cmd_stack               0x2000'1368   0x50  Data  Lc  sim7020.o [1]
+cmd_stack_clear          0x800'1871   0x20  Code  Gb  sim7020.o [1]
+cmd_stack_force_push     0x800'182f   0x2c  Code  Lc  sim7020.o [1]
+cmd_stack_is_empty       0x800'185b   0x16  Code  Lc  sim7020.o [1]
+cmd_stack_pull           0x800'179d   0x4e  Code  Lc  sim7020.o [1]
+cmd_stack_push           0x800'17eb   0x44  Code  Lc  sim7020.o [1]
+compare_key              0x800'3dcb   0x62  Code  Lc  json.o [1]
+count_md5                0x800'5025  0x240  Code  Gb  md5.o [1]
+empty                    0x800'711d    0x2  Code  Gb  clock.o [1]
+error_sim               0x2000'1679    0x1  Data  Gb  sim7020_phy.o [1]
+exit                     0x800'7fe3    0x8  Code  Gb  exit.o [2]
+float_to_str             0x800'270d  0x168  Code  Gb  misc.o [1]
+fpows10                  0x800'7eb0   0x2c  Data  Lc  misc.o [1]
+free                     0x800'4ff5    0x8  Code  Gb  heaptramp0.o [2]
+get_hex_char             0x800'4ffd   0x28  Code  Lc  md5.o [1]
+get_timestep             0x800'711f   0x52  Code  Gb  clock.o [1]
+hadc                    0x2000'12bc   0x5c  Data  Gb  main.o [1]
+hash                    0x2000'1564   0x10  Data  Lc  md5.o [1]
+hlptim                  0x2000'1430   0x30  Data  Lc  schedule.o [1]
+hlptim1                 0x2000'1400   0x30  Data  Gb  main.o [1]
+hlpuart1                0x2000'11bc   0x80  Data  Gb  main.o [1]
+hrtc                    0x2000'14b4   0x24  Data  Gb  main.o [1]
+huart2                  0x2000'123c   0x80  Data  Gb  main.o [1]
+init_mparams             0x800'00dd   0x2a  Code  Lc  dlmalloc.o [2]
+init_top                 0x800'0107   0x38  Code  Lc  dlmalloc.o [2]
+json_add_object          0x800'3aeb   0x34  Code  Gb  json.o [1]
+json_dbg                0x2000'162c    0x4  Data  Gb  protocol.o [1]
+json_free                0x800'3b53   0x76  Code  Gb  json.o [1]
+json_free_array          0x800'38ff   0x2e  Code  Gb  json.o [1]
+json_free_object         0x800'3ab9   0x32  Code  Gb  json.o [1]
+json_free_value          0x800'3a1d   0x32  Code  Gb  json.o [1]
+json_get_value_from_str
+                         0x800'4091   0xa2  Code  Gb  json.o [1]
+json_new_array           0x800'3821   0xde  Code  Gb  json.o [1]
+json_new_object          0x800'3a4f   0x6a  Code  Gb  json.o [1]
+json_new_value           0x800'392d   0xf0  Code  Gb  json.o [1]
+json_prepair_value       0x800'3e2d  0x25a  Code  Lc  json.o [1]
+json_print_object        0x800'3bc9  0x196  Code  Gb  json.o [1]
+json_print_to_str        0x800'3d5f   0x6c  Code  Gb  json.o [1]
+k                        0x800'7b3c  0x100  Data  Lc  md5.o [1]
+last_msg_time           0x2000'1630    0x4  Data  Lc  sim7020.o [1]
+led                     0x2000'1600    0x8  Data  Lc  uart_simple_protocol.o [1]
+lmos                     0x800'7b00   0x18  Data  Lc  xttotm.o [2]
+lmos                     0x800'79ec   0x18  Data  Lc  xDaysTo.o [2]
+localtime                0x800'7991   0x18  Code  Gb  localtim.o [2]
+main                     0x800'6d35   0x60  Code  Gb  main.o [1]
+memset                   0x800'4fe1   0x14  Code  Gb  memset.o [4]
+mktime                   0x800'7899   0xf8  Code  Gb  mktime.o [2]
+modem_reset             0x2000'15f8    0x8  Data  Lc  sim7020_phy.o [1]
+mos                      0x800'7b18   0x18  Data  Lc  xttotm.o [2]
+mos                      0x800'7a04   0x18  Data  Lc  xDaysTo.o [2]
+mparams                 0x2000'1538   0x18  Data  Lc  dlmalloc.o [2]
+new_json                 0x800'3b1f   0x34  Code  Gb  json.o [1]
+old_len                 0x2000'1676    0x2  Data  Gb  uart_simple_protocol.o [1]
+on_cap                  0x2000'15e8    0x8  Data  Lc  sim7020_phy.o [1]
+on_sim                  0x2000'15e0    0x8  Data  Lc  sim7020_phy.o [1]
+one                      0x800'6d09    0xe  Code  Gb  main.o [1]
+one_desc                0x2000'1574    0xc  Data  Gb  main.o [1]
+pows10                   0x800'7f08   0x28  Data  Lc  misc.o [1]
+proto_send               0x800'3101   0x42  Code  Gb  protocol.o [1]
+proto_status            0x2000'14d8   0x24  Data  Gb  protocol.o [1]
+pwrkey                  0x2000'15f0    0x8  Data  Lc  sim7020_phy.o [1]
+r                        0x800'7c3c  0x100  Data  Lc  md5.o [1]
+res                     0x2000'0000    0x4  Data  Gb  adc.o [1]
+reset_on_cap_desc       0x2000'1598    0xc  Data  Lc  sim7020_phy.o [1]
+reset_pwrkey_desc       0x2000'15a4    0xc  Data  Lc  sim7020_phy.o [1]
+sAlarm                  0x2000'148c   0x28  Data  Gb  main.o [1]
+sDate                   0x2000'1628    0x4  Data  Gb  main.o [1]
+sTime                   0x2000'1550   0x14  Data  Gb  main.o [1]
+salt                    0x2000'13b8   0x48  Data  Gb  protocol.o [1]
+screen_huart            0x2000'1640    0x4  Data  Lc  uart_simple_protocol.o [1]
+segment_holding          0x800'00c1   0x1c  Code  Lc  dlmalloc.o [2]
+send_ok                  0x800'82fc    0xc  Data  Gb  sim7020.o [1]
+set_on_cap_desc         0x2000'15b0    0xc  Data  Lc  sim7020_phy.o [1]
+set_on_sim_desc         0x2000'15bc    0xc  Data  Lc  sim7020_phy.o [1]
+set_pwrkey_desc         0x2000'15c8    0xc  Data  Lc  sim7020_phy.o [1]
+sim7020                 0x2000'1318   0x50  Data  Gb  sim7020.o [1]
+sim7020_desc            0x2000'158c    0xc  Data  Lc  sim7020.o [1]
+sim7020_get_csq          0x800'23eb    0xa  Code  Gb  sim7020.o [1]
+sim7020_phy_desc        0x2000'15d4    0xc  Data  Lc  sim7020_phy.o [1]
+sim7020_phy_init         0x800'2b59   0x50  Code  Gb  sim7020_phy.o [1]
+sim7020_phy_power_off    0x800'2bfd   0x2e  Code  Gb  sim7020_phy.o [1]
+sim7020_phy_power_on     0x800'2ba9   0x54  Code  Gb  sim7020_phy.o [1]
+sim7020_phy_processor    0x800'2cd9   0xe0  Code  Gb  sim7020_phy.o [1]
+sim7020_phy_processor::new_len
+                        0x2000'1672    0x2  Data  Lc  sim7020_phy.o [1]
+sim7020_phy_processor::old_len
+                        0x2000'1670    0x2  Data  Lc  sim7020_phy.o [1]
+sim7020_phy_rx_enabled  0x2000'167a    0x1  Data  Lc  sim7020_phy.o [1]
+sim7020_phy_send         0x800'2c2b   0x3c  Code  Gb  sim7020_phy.o [1]
+sim7020_processor        0x800'1895  0xa5a  Code  Lc  sim7020.o [1]
+sim7020_reset_on_cap     0x800'2c9d   0x12  Code  Gb  sim7020_phy.o [1]
+sim7020_reset_pwrkey     0x800'2caf   0x12  Code  Gb  sim7020_phy.o [1]
+sim7020_set_on_cap       0x800'2c67   0x12  Code  Gb  sim7020_phy.o [1]
+sim7020_set_on_sim       0x800'2c79   0x12  Code  Gb  sim7020_phy.o [1]
+sim7020_set_pwrkey       0x800'2c8b   0x12  Code  Gb  sim7020_phy.o [1]
+sim7020_start            0x800'22f5   0x5e  Code  Gb  sim7020.o [1]
+sim7020_start_sim        0x800'2365   0x16  Code  Gb  sim7020.o [1]
+sim7020_stop             0x800'23fd    0xe  Code  Gb  sim7020.o [1]
+sim7020_tcp_activate_context
+                         0x800'2399   0x10  Code  Gb  sim7020.o [1]
+sim7020_tcp_deactivate_context
+                         0x800'23a9    0xa  Code  Gb  sim7020.o [1]
+sim7020_tcp_get_ip       0x800'23d7    0xa  Code  Gb  sim7020.o [1]
+sim7020_tcp_open_socket
+                         0x800'23c3    0xa  Code  Gb  sim7020.o [1]
+sim7020_tcp_send         0x800'23e1    0xa  Code  Gb  sim7020.o [1]
+sim7020_tcp_set_command_mode
+                         0x800'238f    0xa  Code  Gb  sim7020.o [1]
+sim7020_tcp_set_one_socket_mode
+                         0x800'2385    0xa  Code  Gb  sim7020.o [1]
+sim7020_tcp_start_task   0x800'23b3   0x10  Code  Gb  sim7020.o [1]
+sim7020_tcp_update_status
+                         0x800'237b    0xa  Code  Gb  sim7020.o [1]
+sim7020_tcp_wait_open_socket
+                         0x800'23cd    0xa  Code  Gb  sim7020.o [1]
+sim7020_tra_rx_buff     0x2000'0ff4  0x100  Data  Gb  sim7020_phy.o [1]
+sim7020_tra_rx_buff_p   0x2000'167b    0x1  Data  Gb  sim7020_phy.o [1]
+sim7020_tra_tx_buff     0x2000'0c1c  0x200  Data  Gb  sim7020_phy.o [1]
+sim_huart               0x2000'1634    0x4  Data  Lc  sim7020_phy.o [1]
+spec_strcp               0x800'29cb   0x36  Code  Gb  misc.o [1]
+spec_strlen              0x800'29a9   0x22  Code  Gb  misc.o [1]
+str2uint8                0x800'2457   0x4a  Code  Gb  misc.o [1]
+str_is_ip                0x800'25c1  0x14c  Code  Gb  misc.o [1]
+stradd                   0x800'253b   0x4a  Code  Gb  misc.o [1]
+strcp                    0x800'2585   0x3c  Code  Gb  misc.o [1]
+strlen                   0x800'2a01   0x18  Code  Gb  misc.o [1]
+strnstr                  0x800'24a1   0x9a  Code  Gb  misc.o [1]
+strstr                   0x800'2431   0x26  Code  Gb  misc.o [1]
+tcp                     0x2000'14fc   0x24  Data  Gb  sim7020_tcp.o [1]
+tcp_closed_callback      0x800'30df   0x12  Code  Gb  protocol.o [1]
+tcp_json                0x2000'1638    0x4  Data  Lc  sim7020_tcp.o [1]
+tcp_prepair_msg_to_send
+                         0x800'2a85   0x16  Code  Gb  sim7020_tcp.o [1]
+tcp_rx_callback          0x800'2e3d  0x2a2  Code  Gb  protocol.o [1]
+tcp_send_and_free        0x800'2a77    0xe  Code  Gb  sim7020_tcp.o [1]
+tcp_start                0x800'2a19   0x44  Code  Gb  sim7020_tcp.o [1]
+tcp_stop                 0x800'2a5d   0x1a  Code  Gb  sim7020_tcp.o [1]
+temp                    0x2000'1610    0x4  Data  Gb  adc.o [1]
+timeout                 0x2000'166e    0x2  Data  Lc  sim7020.o [1]
+tmp                     0x2000'10f4   0xc8  Data  Lc  md5.o [1]
+uart_rx_buff            0x2000'0818  0x404  Data  Lc  uart_simple_protocol.o [1]
+uart_rx_buffer          0x2000'0010  0x404  Data  Lc  sim7020_phy.o [1]
+uint32_to_str            0x800'2875   0x7a  Code  Gb  misc.o [1]
+uint32withoffset_to_str
+                         0x800'28ef   0xac  Code  Gb  misc.o [1]
+usp_tx_buff             0x2000'0414  0x404  Data  Lc  uart_simple_protocol.o [1]
+usp_tx_buff_pointer     0x2000'1674    0x2  Data  Lc  uart_simple_protocol.o [1]
+uwTick                  0x2000'163c    0x4  Data  Gb  stm32l0xx_hal.o [1]
+uwTickFreq              0x2000'000c    0x1  Data  Gb  stm32l0xx_hal.o [1]
+uwTickPrio              0x2000'0004    0x4  Data  Gb  stm32l0xx_hal.o [1]
+wtimer0_addabsolute      0x800'5305   0x20  Code  Gb  wt0.o [1]
+wtimer0_addcore          0x800'32ed   0x20  Code  Gb  wtimer.o [1]
+wtimer0_curtime          0x800'5325   0x1a  Code  Gb  wt0.o [1]
+wtimer0_remove           0x800'533f   0x26  Code  Gb  wt0.o [1]
+wtimer0_removecb_core    0x800'52e1   0x24  Code  Gb  wt0.o [1]
+wtimer0_schedq           0x800'3261   0x66  Code  Gb  wtimer.o [1]
+wtimer0_update           0x800'32c7   0x26  Code  Gb  wtimer.o [1]
+wtimer_addcb_core        0x800'3249   0x18  Code  Gb  wtimer.o [1]
+wtimer_cc_get            0x800'7363    0xc  Code  Gb  schedule.o [1]
+wtimer_cc_irq_disable    0x800'7347   0x10  Code  Gb  schedule.o [1]
+wtimer_cc_irq_enable     0x800'7337   0x10  Code  Gb  schedule.o [1]
+wtimer_cc_set            0x800'7357    0xc  Code  Gb  schedule.o [1]
+wtimer_check_cc_irq      0x800'739f   0x10  Code  Gb  schedule.o [1]
+wtimer_checkexpired      0x800'330d   0x3a  Code  Lc  wtimer.o [1]
+wtimer_cnt_get           0x800'736f   0x30  Code  Gb  schedule.o [1]
+wtimer_cnt_get::prev    0x2000'166c    0x2  Data  Lc  schedule.o [1]
+wtimer_doinit            0x800'31fd   0x42  Code  Lc  wtimer.o [1]
+wtimer_init              0x800'323f    0xa  Code  Gb  wtimer.o [1]
+wtimer_pending          0x2000'1644    0x4  Data  Gb  wtimer.o [1]
+wtimer_reg_func          0x800'31a9   0x54  Code  Gb  wtimer.o [1]
+wtimer_removecb_core     0x800'6489   0x24  Code  Gb  wt01.o [1]
+wtimer_runcallbacks      0x800'3347   0x52  Code  Gb  wtimer.o [1]
+wtimer_runcallbacks_not_processed
+                        0x2000'167c    0x1  Data  Gb  wtimer.o [1]
+wtimer_state            0x2000'1520   0x18  Data  Gb  wtimer.o [1]
+
+
+[1] = C:\work\sim_scheduler\sim_scheduler\EWARM\scheduler_sim7020\Obj
+[2] = dl6M_tlf.a
+[3] = m6M_tl.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  32'028 bytes of readonly  code memory
+   1'636 bytes of readonly  data memory
+   8'058 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
